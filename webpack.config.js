@@ -4,7 +4,7 @@ module.exports = {
     },
     output: {
         filename: '[name].js',
-        publicPath: '/dist'
+        publicPath: '/dist/'
     },
     module: {
         rules: [{
@@ -18,6 +18,12 @@ module.exports = {
                 'style-loader',
                 'css-loader',
                 'sass-loader'
+            ]
+        },
+        {
+            test: /\.(png|svg|jpg|gif)$/,
+            use: [
+                'file-loader'
             ]
         }
     ]
