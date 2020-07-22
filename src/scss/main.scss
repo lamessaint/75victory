@@ -1,8 +1,7 @@
-@import "../../node_modules/normalize.css/normalize.css";
+@import '../../node_modules/normalize.css/normalize.css';
 
 /* vars */
 $margin: 150px;
-
 $black: #000;
 $white: #fff;
 
@@ -31,7 +30,7 @@ button {
 }
 
 .main {
-  background: url("../img/main-background.png") no-repeat center/ cover;
+  background: url('../img/main-background.png') no-repeat center/ cover;
   width: 100%;
   height: 560px;
   scroll-behavior: auto;
@@ -152,7 +151,7 @@ button {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        background: url("../img/name-bg.png") no-repeat center;
+        background: url('../img/name-bg.png') no-repeat center;
         width: 344px;
         color: $white;
         position: absolute;
@@ -219,6 +218,7 @@ button {
 }
 
 .request-form {
+  display: none;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -226,35 +226,58 @@ button {
   z-index: 5;
   position: fixed;
   top: 0;
+  left: 0;
   background: rgba(0, 0, 0, 0.7);
+  h3 {
+    text-align: center;
+  }
   .form-group {
+    display: flex;
+    flex-direction: column;
     width: 500px;
-    background-image: url("../img/form-map.png") no-repeat;
+    background-image: url('../img/form-map.png') no-repeat;
     background-color: $white;
-    fieldset {
-      display: flex;
-      flex-direction: column;
-      border: none;
-      input {
-        width: 90%;
-        padding: 8px 10px;
-        margin: 12px 0;
+    padding: 10px 20px;
+
+    input {
+      padding: 8px 10px;
+      margin: 12px 0;
+      border: 1px solid #000000;
+      border-radius: 2px;
+      &:focus {
         border: 1px solid #000000;
-        border-radius: 2px;
-        &:focus {
-          border: 1px solid #000000;
+      }
+    }
+    .contact {
+      display: flex;
+      justify-content: space-between;
+      &_phone {
+        margin-right: 5px;
+        input:invalid {
+          color: red;
         }
       }
-      .contact {
+      &_data {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    button {
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    &__comment {
+      textarea {
+        width: 100%;
+        height: 100px;
+      }
+      .label-title {
         display: flex;
         justify-content: space-between;
-        input {
-          width: 80%;
-        }
-        &_data {
-          width: 50%;
-          display: flex;
-          flex-direction: column;
+        margin-bottom: 10px;
+        span:first-child {
+          margin-right: 10px;
         }
       }
     }

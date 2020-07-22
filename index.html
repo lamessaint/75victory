@@ -1,262 +1,264 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <link
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="main">
-    <section class="wrapper" id="main">
-      <header>
-        <div>
-          <img src="src/img/logo.png" alt="" class="logo" />
-          <img src="src/img/logo-desc.png" alt="" class="logo-desc" />
-        </div>
-        <ul>
-          <li>
-            <a href="#main">Главная</a>
-          </li>
-          <li>
-            <a href="#participate">Как участвовать</a>
-          </li>
-          <li>
-            <a href="#participants">Участники</a>
-          </li>
-          <li>
-            <a href="#news">Новости</a>
-          </li>
-        </ul>
-      </header>
-      <section class="description">
-        <div>
-          <caption>
-            С 23 апреля
-          </caption>
-          <h1>Память поколений</h1>
-          <p>
-            У каждого из нас есть близкие, которые стали свидетелями тех военных
-            лет, совершали подвиги и вершили историю! Защищали Родину и боролись
-            за мирную жизнь! Поделитесь историей и фотографией своих родных и
-            они прозвучат в эфире Радио Romantika!
-          </p>
-          <button onclick="openForm(this)">Участвовать</button>
-        </div>
-        <img src="src/img/may-bg.png" alt="" />
-      </section>
-    </section>
-    <section class="participate" id="participate">
-      <img src="src/img/rectangle-dots.svg" alt="" class="rectangle-dots" />
-      <h2>Как участвовать</h2>
-      <section class="participate_steps">
-        <div class="participate_steps-block">
-          <span>1 шаг</span>
-          <img src="src/img/application.png" alt="" />
-          <p>Заполните заявку для участия у нас на странице</p>
-        </div>
-        <div class="participate_steps-block">
-          <span>2 шаг</span>
-          <img src="src/img/relatives.png" alt="" />
-          <p>
-            Напишите о своем родственнике, принимавшем участие в Великой
-            Отечественной войне
-          </p>
-          <img src="src/img/hand.png" alt="" class="hand" />
-        </div>
-        <div class="participate_steps-block">
-          <span>3 шаг</span>
-          <img src="src/img/upload.png" alt="" />
-          <p>Загрузите фотографию. Готово!</p>
-        </div>
-      </section>
-      <button>отправить заявку</button>
-    </section>
-    <section class="participants" id="participants">
-      <img src="src/img/rectangle-dots.svg" alt="" class="rectangle-dots" />
-      <img src="src/img/square-dots.svg" alt="" class="square-dots" />
-      <h2>Участники</h2>
-      <section class="participants_info">
-        <div class="img-block">
-          <img src="src/img/her.png" alt="" class="participants_img" />
-          <div>Имя Фамилия</div>
-        </div>
-        <section class="participants_info-desc">
-          <p>
-            <img src="src/img/her.png" alt="" class="participants_img" />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices
-            bibendum viverra aliquam duis vehicula vitae sit varius urna.
-            Convallis euismod venenatis cursus arcu elementum blandit massa
-            euismod blandit. Porttitor ultrices ultricies cras morbi sit. Et,
-            sed nibh egestas aliquam faucibus egestas. Magnis quis egestas
-            scelerisque vivamus ornare. Quis in phasellus pharetra, tortor
-            metus. Diam tristique sociis nec imperdiet in viverra egestas et.
-            Vitae, tempus est convallis pulvinar pharetra tristique aliquet.
-            Imperdiet vulputate turpis velit tincidunt volutpat eu pulvinar sed
-            nec. Quam ornare sit vel rhoncus quam. Hac sed vitae in morbi sem.
-            Vel eu odio pharetra, lacus a, diam. Enim quis blandit senectus
-            lobortis pharetra feugiat. Mi venenatis et sagittis semper. Nisl,
-            orci purus viverra nisl eget. Volutpat sit neque condimentum odio
-            sit vitae sed felis urna. Tortor orci amet, pellentesque odio.
-            Ultricies iaculis aenean sem nec. Consectetur ac iaculis varius
-            rhoncus arcu. Facilisis pharetra, tincidunt nibh quam consequat in
-            interdum. Semper sodales augue nec morbi dignissim facilisis. Sed
-            malesuada leo morbi quam dui nibh suspendisse non non. Eu eget
-            adipiscing tincidunt erat etiam. Aliquam, sed mauris, etiam
-            sollicitudin mauris, augue vitae nulla et. Hendrerit a, ac dignissim
-            a euismod. Risus semper nunc condimentum nisl et cras neque proin
-            nam. In nisi duis ornare diam ultrices mi massa vitae.
-          </p>
-          <div class="participants_additional">
-            <div class="name">
-              <h3>Имя Фамилия (правнучка)</h3>
-              <span>г. Москва</span>
-            </div>
-            <div>
-              <i class="fab fa-odnoklassniki"></i>
-              <i class="fab fa-facebook"></i>
-              <i class="fab fa-vk"></i>
-            </div>
-          </div>
-        </section>
-      </section>
-      <section class="participants_info participants_right">
-        <section class="participants_info-desc">
-          <p>
-            <img src="src/img/him.png" alt="" class="participants_img" />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices
-            bibendum viverra aliquam duis vehicula vitae sit varius urna.
-            Convallis euismod venenatis cursus arcu elementum blandit massa
-            euismod blandit. Porttitor ultrices ultricies cras morbi sit. Et,
-            sed nibh egestas aliquam faucibus egestas. Magnis quis egestas
-            scelerisque vivamus ornare. Quis in phasellus pharetra, tortor
-            metus. Diam tristique sociis nec imperdiet in viverra egestas et.
-            Vitae, tempus est convallis pulvinar pharetra tristique aliquet.
-            Imperdiet vulputate turpis velit tincidunt volutpat eu pulvinar sed
-            nec. Quam ornare sit vel rhoncus quam. Hac sed vitae in morbi sem.
-            Vel eu odio pharetra, lacus a, diam. Enim quis blandit senectus
-            lobortis pharetra feugiat. Mi venenatis et sagittis semper. Nisl,
-            orci purus viverra nisl eget. Volutpat sit neque condimentum odio
-            sit vitae sed felis urna. Tortor orci amet, pellentesque odio.
-            Ultricies iaculis aenean sem nec. Consectetur ac iaculis varius
-            rhoncus arcu. Facilisis pharetra, tincidunt nibh quam consequat in
-            interdum. Semper sodales augue nec morbi dignissim facilisis. Sed
-            malesuada leo morbi quam dui nibh suspendisse non non. Eu eget
-            adipiscing tincidunt erat etiam. Aliquam, sed mauris, etiam
-            sollicitudin mauris, augue vitae nulla et. Hendrerit a, ac dignissim
-            a euismod. Risus semper nunc condimentum nisl et cras neque proin
-            nam. In nisi duis ornare diam ultrices mi massa vitae.
-          </p>
-          <div class="participants_additional">
-            <div class="name">
-              <h3>Имя Фамилия (правнучка)</h3>
-              <span>г. Москва</span>
-            </div>
 
-            <div>
-              <i class="fab fa-odnoklassniki"></i>
-              <i class="fab fa-facebook"></i>
-              <i class="fab fa-vk"></i>
-            </div>
-          </div>
-        </section>
-        <div class="img-block right-block">
-          <img src="src/img/him.png" alt="" class="participants_img" />
-          <div>Имя Фамилия</div>
-        </div>
-      </section>
-      <section class="participants_info">
-        <div class="img-block">
-          <img src="src/img/her.png" alt="" class="participants_img" />
-          <div>Имя Фамилия</div>
-        </div>
-        <section class="participants_info-desc">
-          <p>
-            <img src="src/img/her.png" alt="" class="participants_img" />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices
-            bibendum viverra aliquam duis vehicula vitae sit varius urna.
-            Convallis euismod venenatis cursus arcu elementum blandit massa
-            euismod blandit. Porttitor ultrices ultricies cras morbi sit. Et,
-            sed nibh egestas aliquam faucibus egestas. Magnis quis egestas
-            scelerisque vivamus ornare. Quis in phasellus pharetra, tortor
-            metus. Diam tristique sociis nec imperdiet in viverra egestas et.
-            Vitae, tempus est convallis pulvinar pharetra tristique aliquet.
-            Imperdiet vulputate turpis velit tincidunt volutpat eu pulvinar sed
-            nec. Quam ornare sit vel rhoncus quam. Hac sed vitae in morbi sem.
-            Vel eu odio pharetra, lacus a, diam. Enim quis blandit senectus
-            lobortis pharetra feugiat. Mi venenatis et sagittis semper. Nisl,
-            orci purus viverra nisl eget. Volutpat sit neque condimentum odio
-            sit vitae sed felis urna. Tortor orci amet, pellentesque odio.
-            Ultricies iaculis aenean sem nec. Consectetur ac iaculis varius
-            rhoncus arcu. Facilisis pharetra, tincidunt nibh quam consequat in
-            interdum. Semper sodales augue nec morbi dignissim facilisis. Sed
-            malesuada leo morbi quam dui nibh suspendisse non non. Eu eget
-            adipiscing tincidunt erat etiam. Aliquam, sed mauris, etiam
-            sollicitudin mauris, augue vitae nulla et. Hendrerit a, ac dignissim
-            a euismod. Risus semper nunc condimentum nisl et cras neque proin
-            nam. In nisi duis ornare diam ultrices mi massa vitae.
-          </p>
-          <div class="participants_additional">
-            <div class="name">
-              <h3>Имя Фамилия (правнучка)</h3>
-              <span>г. Москва</span>
-            </div>
-            <div>
-              <i class="fab fa-odnoklassniki"></i>
-              <i class="fab fa-facebook"></i>
-              <i class="fab fa-vk"></i>
-            </div>
-          </div>
-        </section>
-      </section>
-      <img
-        src="src/img/rectangle-dots.svg"
-        alt=""
-        class="rectangle-dots left-side"
-      />
+<head>
+  <meta charset="utf-8" />
+  <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet" />
+</head>
+
+<body class="main">
+  <section class="wrapper" id="main">
+    <header>
+      <div>
+        <img src="src/img/logo.png" alt="" class="logo" />
+        <img src="src/img/logo-desc.png" alt="" class="logo-desc" />
+      </div>
+      <ul>
+        <li>
+          <a href="#main">Главная</a>
+        </li>
+        <li>
+          <a href="#participate">Как участвовать</a>
+        </li>
+        <li>
+          <a href="#participants">Участники</a>
+        </li>
+        <li>
+          <a href="#news">Новости</a>
+        </li>
+      </ul>
+    </header>
+    <section class="description">
+      <div>
+        <caption>
+          С 23 апреля
+        </caption>
+        <h1>Память поколений</h1>
+        <p>
+          У каждого из нас есть близкие, которые стали свидетелями тех военных
+          лет, совершали подвиги и вершили историю! Защищали Родину и боролись
+          за мирную жизнь! Поделитесь историей и фотографией своих родных и
+          они прозвучат в эфире Радио Romantika!
+        </p>
+        <button onclick="openForm(this)">Участвовать</button>
+      </div>
+      <img src="src/img/may-bg.png" alt="" />
     </section>
-    <section class="news" id="news">
-      <div></div>
-      <div class="carousel"></div>
-      <div class="carousel">
-        <div></div>
-        <div></div>
-        <div></div>
+  </section>
+  <section class="participate" id="participate">
+    <img src="src/img/rectangle-dots.svg" alt="" class="rectangle-dots" />
+    <h2>Как участвовать</h2>
+    <section class="participate_steps">
+      <div class="participate_steps-block">
+        <span>1 шаг</span>
+        <img src="src/img/application.png" alt="" />
+        <p>Заполните заявку для участия у нас на странице</p>
+      </div>
+      <div class="participate_steps-block">
+        <span>2 шаг</span>
+        <img src="src/img/relatives.png" alt="" />
+        <p>
+          Напишите о своем родственнике, принимавшем участие в Великой
+          Отечественной войне
+        </p>
+        <img src="src/img/hand.png" alt="" class="hand" />
+      </div>
+      <div class="participate_steps-block">
+        <span>3 шаг</span>
+        <img src="src/img/upload.png" alt="" />
+        <p>Загрузите фотографию. Готово!</p>
       </div>
     </section>
-    <section class="request-form">
-      <form class="form-group">
+    <button>отправить заявку</button>
+  </section>
+  <section class="participants" id="participants">
+    <img src="src/img/rectangle-dots.svg" alt="" class="rectangle-dots" />
+    <img src="src/img/square-dots.svg" alt="" class="square-dots" />
+    <h2>Участники</h2>
+    <section class="participants_info">
+      <div class="img-block">
+        <img src="src/img/her.png" alt="" class="participants_img" />
+        <div>Имя Фамилия</div>
+      </div>
+      <section class="participants_info-desc">
+        <p>
+          <img src="src/img/her.png" alt="" class="participants_img" />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices
+          bibendum viverra aliquam duis vehicula vitae sit varius urna.
+          Convallis euismod venenatis cursus arcu elementum blandit massa
+          euismod blandit. Porttitor ultrices ultricies cras morbi sit. Et,
+          sed nibh egestas aliquam faucibus egestas. Magnis quis egestas
+          scelerisque vivamus ornare. Quis in phasellus pharetra, tortor
+          metus. Diam tristique sociis nec imperdiet in viverra egestas et.
+          Vitae, tempus est convallis pulvinar pharetra tristique aliquet.
+          Imperdiet vulputate turpis velit tincidunt volutpat eu pulvinar sed
+          nec. Quam ornare sit vel rhoncus quam. Hac sed vitae in morbi sem.
+          Vel eu odio pharetra, lacus a, diam. Enim quis blandit senectus
+          lobortis pharetra feugiat. Mi venenatis et sagittis semper. Nisl,
+          orci purus viverra nisl eget. Volutpat sit neque condimentum odio
+          sit vitae sed felis urna. Tortor orci amet, pellentesque odio.
+          Ultricies iaculis aenean sem nec. Consectetur ac iaculis varius
+          rhoncus arcu. Facilisis pharetra, tincidunt nibh quam consequat in
+          interdum. Semper sodales augue nec morbi dignissim facilisis. Sed
+          malesuada leo morbi quam dui nibh suspendisse non non. Eu eget
+          adipiscing tincidunt erat etiam. Aliquam, sed mauris, etiam
+          sollicitudin mauris, augue vitae nulla et. Hendrerit a, ac dignissim
+          a euismod. Risus semper nunc condimentum nisl et cras neque proin
+          nam. In nisi duis ornare diam ultrices mi massa vitae.
+        </p>
+        <div class="participants_additional">
+          <div class="name">
+            <h3>Имя Фамилия (правнучка)</h3>
+            <span>г. Москва</span>
+          </div>
+          <div>
+            <i class="fab fa-odnoklassniki"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-vk"></i>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="participants_info participants_right">
+      <section class="participants_info-desc">
+        <p>
+          <img src="src/img/him.png" alt="" class="participants_img" />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices
+          bibendum viverra aliquam duis vehicula vitae sit varius urna.
+          Convallis euismod venenatis cursus arcu elementum blandit massa
+          euismod blandit. Porttitor ultrices ultricies cras morbi sit. Et,
+          sed nibh egestas aliquam faucibus egestas. Magnis quis egestas
+          scelerisque vivamus ornare. Quis in phasellus pharetra, tortor
+          metus. Diam tristique sociis nec imperdiet in viverra egestas et.
+          Vitae, tempus est convallis pulvinar pharetra tristique aliquet.
+          Imperdiet vulputate turpis velit tincidunt volutpat eu pulvinar sed
+          nec. Quam ornare sit vel rhoncus quam. Hac sed vitae in morbi sem.
+          Vel eu odio pharetra, lacus a, diam. Enim quis blandit senectus
+          lobortis pharetra feugiat. Mi venenatis et sagittis semper. Nisl,
+          orci purus viverra nisl eget. Volutpat sit neque condimentum odio
+          sit vitae sed felis urna. Tortor orci amet, pellentesque odio.
+          Ultricies iaculis aenean sem nec. Consectetur ac iaculis varius
+          rhoncus arcu. Facilisis pharetra, tincidunt nibh quam consequat in
+          interdum. Semper sodales augue nec morbi dignissim facilisis. Sed
+          malesuada leo morbi quam dui nibh suspendisse non non. Eu eget
+          adipiscing tincidunt erat etiam. Aliquam, sed mauris, etiam
+          sollicitudin mauris, augue vitae nulla et. Hendrerit a, ac dignissim
+          a euismod. Risus semper nunc condimentum nisl et cras neque proin
+          nam. In nisi duis ornare diam ultrices mi massa vitae.
+        </p>
+        <div class="participants_additional">
+          <div class="name">
+            <h3>Имя Фамилия (правнучка)</h3>
+            <span>г. Москва</span>
+          </div>
+
+          <div>
+            <i class="fab fa-odnoklassniki"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-vk"></i>
+          </div>
+        </div>
+      </section>
+      <div class="img-block right-block">
+        <img src="src/img/him.png" alt="" class="participants_img" />
+        <div>Имя Фамилия</div>
+      </div>
+    </section>
+    <section class="participants_info">
+      <div class="img-block">
+        <img src="src/img/her.png" alt="" class="participants_img" />
+        <div>Имя Фамилия</div>
+      </div>
+      <section class="participants_info-desc">
+        <p>
+          <img src="src/img/her.png" alt="" class="participants_img" />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices
+          bibendum viverra aliquam duis vehicula vitae sit varius urna.
+          Convallis euismod venenatis cursus arcu elementum blandit massa
+          euismod blandit. Porttitor ultrices ultricies cras morbi sit. Et,
+          sed nibh egestas aliquam faucibus egestas. Magnis quis egestas
+          scelerisque vivamus ornare. Quis in phasellus pharetra, tortor
+          metus. Diam tristique sociis nec imperdiet in viverra egestas et.
+          Vitae, tempus est convallis pulvinar pharetra tristique aliquet.
+          Imperdiet vulputate turpis velit tincidunt volutpat eu pulvinar sed
+          nec. Quam ornare sit vel rhoncus quam. Hac sed vitae in morbi sem.
+          Vel eu odio pharetra, lacus a, diam. Enim quis blandit senectus
+          lobortis pharetra feugiat. Mi venenatis et sagittis semper. Nisl,
+          orci purus viverra nisl eget. Volutpat sit neque condimentum odio
+          sit vitae sed felis urna. Tortor orci amet, pellentesque odio.
+          Ultricies iaculis aenean sem nec. Consectetur ac iaculis varius
+          rhoncus arcu. Facilisis pharetra, tincidunt nibh quam consequat in
+          interdum. Semper sodales augue nec morbi dignissim facilisis. Sed
+          malesuada leo morbi quam dui nibh suspendisse non non. Eu eget
+          adipiscing tincidunt erat etiam. Aliquam, sed mauris, etiam
+          sollicitudin mauris, augue vitae nulla et. Hendrerit a, ac dignissim
+          a euismod. Risus semper nunc condimentum nisl et cras neque proin
+          nam. In nisi duis ornare diam ultrices mi massa vitae.
+        </p>
+        <div class="participants_additional">
+          <div class="name">
+            <h3>Имя Фамилия (правнучка)</h3>
+            <span>г. Москва</span>
+          </div>
+          <div>
+            <i class="fab fa-odnoklassniki"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-vk"></i>
+          </div>
+        </div>
+      </section>
+    </section>
+    <img src="src/img/rectangle-dots.svg" alt="" class="rectangle-dots left-side" />
+  </section>
+  <section class="news" id="news">
+    <div></div>
+    <div class="carousel"></div>
+    <div class="carousel">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </section>
+  <section class="request-form">
+    <form class="form-group">
+      <div>
         <h3>
           Подать заявку
         </h3>
-        <fieldset>
-          <label for="">Ваше имя и фамилия</label>
-          <input type="text" />
-          <label for="">Город</label>
-          <input type="text" />
-          <div class="contact">
-            <div class="contact_phone contact_data">
-              <label for="tel">Телефон</label>
-              <input type="tel" id="tel" />
-            </div>
-            <div class="contact_email contact_data">
-              <label for="email">Email</label>
-              <input type="email" id="email" />
-            </div>
-          </div>
-          <label for="">Имя и фамилия родственника</label>
-          <input type="text" />
-          <label for="">Кем вы приходитесь (внук, племянница и тд)</label>
-          <input type="text" />
-          <button>Прикрепить фото</button>
-          <div>
-            <label for=""></label>
-            <textarea name="" id=""></textarea>
-          </div>
-        </fieldset>
-      </form>
-    </section>
+        <button onclick="closeForm()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <label for="">Ваше имя и фамилия</label>
+      <input type="text" />
+      <label for="">Город</label>
+      <input type="text" />
+      <div class="contact">
+        <div class="contact_phone contact_data">
+          <label for="tel">Телефон</label>
+          <input type="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+        </div>
+        <div class="contact_email contact_data">
+          <label for="email">Email</label>
+          <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+        </div>
+      </div>
+      <label for="">Имя и фамилия родственника</label>
+      <input type="text" />
+      <label for="">Кем вы приходитесь (внук, племянница и тд)</label>
+      <input type="text" />
+      <button>Прикрепить фото</button>
+      <div class="form-group__comment">
+        <label for="text" class="label-title">
+          <span>Напишите историю</span>
+          <span>до 3500 символов</span>
+        </label>
+        <textarea name="" id="text"></textarea>
+      </div>
+    </form>
+  </section>
 
-    <script src="/dist/app.js"></script>
-  </body>
+  <script src="/dist/app.js"></script>
+</body>
+
 </html>

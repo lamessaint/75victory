@@ -10,3 +10,8 @@ function openForm() {
 }
 
 openForm();
+
+function closeForm() {
+  requestDialog.style.display = "none";
+}
+closeForm();
