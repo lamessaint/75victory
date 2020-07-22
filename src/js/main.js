@@ -13,5 +13,6 @@ openForm();
 
 function closeForm() {
   requestDialog.style.display = "none";
+  bodyScroll.style.overflow = "scroll";
 }
 closeForm();
