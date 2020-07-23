@@ -9,12 +9,12 @@
 <body class="main">
   <section class="main__wrapper">
     <section class="wrapper" id="main">
-      <header>
-        <div>
+      <header class="header">
+        <div class="header__log">
           <img src="src/img/logo.png" alt="" class="logo" />
           <img src="src/img/logo-desc.png" alt="" class="logo-desc" />
         </div>
-        <ul>
+        <ul class="header__desktop">
           <li>
             <a href="#main">Главная</a>
           </li>
@@ -28,12 +28,36 @@
             <a href="#news">Новости</a>
           </li>
         </ul>
+        <div class="header__mobile">
+          <button class="header__mobile-toggler" onclick="toggleOpenMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="header__mobile-list">
+            <button class="close-toggle" onclick="closeToggle()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul>
+              <li>
+                <a href="#main">Главная</a>
+              </li>
+              <li>
+                <a href="#participate">Как участвовать</a>
+              </li>
+              <li>
+                <a href="#participants">Участники</a>
+              </li>
+              <li>
+                <a href="#news">Новости</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </header>
       <section class="description">
         <div>
-          <caption>
+          <span>
             С 23 апреля
-          </caption>
+          </span>
           <h1>Память поколений</h1>
           <p>
             У каждого из нас есть близкие, которые стали свидетелями тех военных
@@ -41,7 +65,7 @@
             за мирную жизнь! Поделитесь историей и фотографией своих родных и
             они прозвучат в эфире Радио Romantika!
           </p>
-          <button onclick="openForm(this)">Участвовать</button>
+          <button class="open-form" onclick="openForm(this)">Участвовать</button>
         </div>
         <img src="src/img/may-bg.png" alt="" />
       </section>
@@ -70,7 +94,7 @@
           <p>Загрузите фотографию. Готово!</p>
         </div>
       </section>
-      <button>отправить заявку</button>
+      <button class="open-form" onclick="openForm()">отправить заявку</button>
     </section>
     <section class="participants" id="participants">
       <img src="src/img/rectangle-dots.svg" alt="" class="rectangle-dots" />
@@ -81,9 +105,10 @@
           <img src="src/img/her.png" alt="" class="participants_img" />
           <div>Имя Фамилия</div>
         </div>
-        <section class="participants_info-desc">
+        <section class="participants_info-desk">
           <p>
             <img src="src/img/her.png" alt="" class="left-mobile participants_mobile" />
+            <span>Имя Фамилия</span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices
             bibendum viverra aliquam duis vehicula vitae sit varius urna.
             Convallis euismod venenatis cursus arcu elementum blandit massa
@@ -121,9 +146,10 @@
         </section>
       </section>
       <section class="participants_info participants_right">
-        <section class="participants_info-desc">
+        <section class="participants_info-desk">
           <p>
             <img src="src/img/him.png" alt="" class="right-mobile participants_mobile" />
+            <span>Имя Фамилия</span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices
             bibendum viverra aliquam duis vehicula vitae sit varius urna.
             Convallis euismod venenatis cursus arcu elementum blandit massa
@@ -152,7 +178,6 @@
               <h3>Имя Фамилия (правнучка)</h3>
               <span>г. Москва</span>
             </div>
-
             <div>
               <i class="fab fa-odnoklassniki"></i>
               <i class="fab fa-facebook"></i>
@@ -170,9 +195,10 @@
           <img src="src/img/her.png" alt="" class="participants_img" />
           <div>Имя Фамилия</div>
         </div>
-        <section class="participants_info-desc">
+        <section class="participants_info-desk">
           <p>
             <img src="src/img/her.png" alt="" class="left-mobile participants_mobile" />
+            <span>Имя Фамилия</span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices
             bibendum viverra aliquam duis vehicula vitae sit varius urna.
             Convallis euismod venenatis cursus arcu elementum blandit massa
